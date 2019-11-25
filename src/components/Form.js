@@ -104,6 +104,15 @@ export default class Form extends React.Component {
                         </div>
                     </div>
                     <div className="field">
+                        <label>
+                            Slaapplek:{" "}
+                            <select name="role[]" multiple>
+                                <option value="leader">1 persoon</option>
+                                <option value="follower">2 personen</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div className="field">
                         <label className="label" htmlFor={"sleepingArea"}>
                             Slaapplek
                         </label>
