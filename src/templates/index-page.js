@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
 import Form from "../components/Form";
 
 export const IndexPageTemplate = ({
@@ -108,27 +107,6 @@ export const pageQuery = graphql`
                             ...GatsbyImageSharpFluid
                         }
                     }
-                }
-                heading
-                subheading
-                mainpitch {
-                    title
-                    description
-                }
-                description
-                intro {
-                    blurbs {
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 240, quality: 64) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                        text
-                    }
-                    heading
-                    description
                 }
             }
         }
