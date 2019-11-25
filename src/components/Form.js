@@ -77,13 +77,19 @@ export default class Form extends React.Component {
                         <div className="control">
                             <div className="select is-rounded">
                                 <select
-                                    name={"person-count"}
+                                    name={"person-count[]"}
                                     id={"person-count"}
                                     required={true}>
-                                    <option>1 persoon</option>
-                                    <option>2 personen</option>
-                                    <option>3 personen</option>
-                                    <option>4 personen</option>
+                                    <option value="1-persoon">1 persoon</option>
+                                    <option value="2-persoon">
+                                        2 personen
+                                    </option>
+                                    <option value="3-persoon">
+                                        3 personen
+                                    </option>
+                                    <option value="4-persoon">
+                                        4 personen
+                                    </option>
                                 </select>
                             </div>
 
