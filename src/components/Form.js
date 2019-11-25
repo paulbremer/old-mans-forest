@@ -1,6 +1,5 @@
 import React from "react";
 import { navigate } from "gatsby-link";
-import Layout from "./Layout";
 
 function encode(data) {
     return Object.keys(data)
@@ -58,7 +57,7 @@ export default class Form extends React.Component {
                     </div>
                     <div className="field">
                         <label className="label" htmlFor={"name"}>
-                            Your name
+                            Naam
                         </label>
                         <div className="control">
                             <input
@@ -72,21 +71,51 @@ export default class Form extends React.Component {
                         </div>
                     </div>
                     <div className="field">
-                        <label className="label" htmlFor={"email"}>
-                            Email
+                        <label className="label" htmlFor={"person-count"}>
+                            Hoeveel personen?
+                        </label>
+                        <div className="control">
+                            <div className="select is-rounded">
+                                <select
+                                    name={"person-count"}
+                                    id={"person-count"}
+                                    required={true}>
+                                    <option>1 persoon</option>
+                                    <option>2 personen</option>
+                                    <option>3 personen</option>
+                                    <option>4 personen</option>
+                                </select>
+                            </div>
+
+                            {/* <input
+                                className="input"
+                                type={"text"}
+                                name={"person-count"}
+                                onChange={this.handleChange}
+                                id={"person-count"}
+                                required={true}
+                            /> */}
+                        </div>
+                    </div>
+                    <div className="field">
+                        <label className="label" htmlFor={"sleepingArea"}>
+                            Slaapplek
                         </label>
                         <div className="control">
                             <input
                                 className="input"
-                                type={"email"}
-                                name={"email"}
+                                type={"text"}
+                                name={"sleepingArea"}
                                 onChange={this.handleChange}
-                                id={"email"}
+                                id={"sleepingArea"}
                                 required={true}
                             />
                         </div>
                     </div>
-                    <div className="field">
+
+                    <p>Download ticket voor </p>
+
+                    {/* <div className="field">
                         <label className="label" htmlFor={"message"}>
                             Message
                         </label>
@@ -99,7 +128,7 @@ export default class Form extends React.Component {
                                 required={true}
                             />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="field">
                         <button className="button is-link" type="submit">
                             Send
