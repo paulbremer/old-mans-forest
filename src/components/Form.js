@@ -43,7 +43,11 @@ const styles = StyleSheet.create({
 export default class Form extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { isValidated: false, ticketApproved: false };
+        this.state = {
+            isValidated: false,
+            ticketApproved: false,
+            errorMessage: ""
+        };
     }
 
     handleChange = e => {
@@ -70,6 +74,10 @@ export default class Form extends React.Component {
             })
                 .then(() => this.setState({ ticketApproved: true }))
                 .catch(error => alert(error));
+        } else {
+            this.setState({
+                errorMessage: "Je bent een veld vergeten in te vullen."
+            });
         }
     };
 
@@ -164,6 +172,13 @@ export default class Form extends React.Component {
                                     <option value="Camping">Camping</option>
                                 </select>
                             </div>
+                        </div>
+
+                        <div
+                            style={{
+                                color: "#ff2200"
+                            }}>
+                            {this.state.errorMessage}
                         </div>
 
                         <div
