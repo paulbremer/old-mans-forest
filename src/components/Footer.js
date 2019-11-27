@@ -6,7 +6,11 @@ const Footer = class extends React.Component {
         return (
             <footer
                 className="footer has-background-black has-text-white-ter"
-                style={{ textAlign: "center", padding: "3rem auto" }}>
+                style={{
+                    textAlign: "center",
+                    padding: "3rem auto",
+                    marginTop: "2rem"
+                }}>
                 OLD MAN'S FOREST 🌲
             </footer>
         );

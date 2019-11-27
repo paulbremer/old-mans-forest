@@ -25,14 +25,15 @@ export const IndexPageTemplate = ({
                         : image
                 })`,
                 backgroundPosition: `top left`,
-                backgroundAttachment: `fixed`
+                backgroundAttachment: `fixed`,
+                backgroundSize: `contain`
             }}>
             <div
                 style={{
                     display: "flex",
                     height: "150px",
                     lineHeight: "1",
-                    justifyContent: "space-around",
+                    justifyContent: "flex-end",
                     alignItems: "left",
                     flexDirection: "column"
                 }}>
@@ -50,7 +51,7 @@ export const IndexPageTemplate = ({
                 </h1>
             </div>
         </div>
-        <section>
+        <section style={{ padding: "2rem" }}>
             <Form />
         </section>
     </div>
