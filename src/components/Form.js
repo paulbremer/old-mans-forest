@@ -168,8 +168,11 @@ export default class Form extends React.Component {
                                     <option value="kies-een-optie">
                                         Kies een optie
                                     </option>
-                                    <option value="Barn">Barn</option>
-                                    <option value="Camping">Camping</option>
+                                    <option value="barn">Barn</option>
+                                    <option value="camping">Camping</option>
+                                    <option value="geen-overnachting">
+                                        Geen overnachting
+                                    </option>
                                 </select>
                             </div>
                         </div>
