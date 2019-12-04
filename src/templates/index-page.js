@@ -8,6 +8,7 @@ import Form from "../components/Form";
 
 export const IndexPageTemplate = ({
     image,
+    plattegrond,
     title,
     heading,
     subheading,
@@ -16,6 +17,7 @@ export const IndexPageTemplate = ({
     intro
 }) => (
     <div>
+        {console.log(plattegrond)}
         <div
             className="full-width-image margin-top-0"
             style={{
@@ -26,7 +28,9 @@ export const IndexPageTemplate = ({
                 })`,
                 backgroundPosition: `top left`,
                 backgroundAttachment: `fixed`,
-                backgroundSize: `contain`
+                backgroundSize: `contain`,
+                justifyContent: "flex-end",
+                alignItems: "flex-start"
             }}>
             <div
                 style={{
@@ -35,7 +39,9 @@ export const IndexPageTemplate = ({
                     lineHeight: "1",
                     justifyContent: "flex-end",
                     alignItems: "left",
-                    flexDirection: "column"
+                    flexDirection: "column",
+                    margin: "0 -2rem",
+                    transform: "rotate(25deg)"
                 }}>
                 <h1
                     className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
@@ -52,6 +58,91 @@ export const IndexPageTemplate = ({
             </div>
         </div>
         <section style={{ padding: "2rem" }}>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <h2
+                    className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                    style={{
+                        backgroundColor: "rgb(255, 68, 0)",
+                        color: "white",
+                        padding: "0.25em 1em",
+                        margin: "2rem 0",
+                        textTransform: "uppercase"
+                    }}>
+                    Wat is het?
+                </h2>
+            </div>
+            <div style={{ maxWidth: "47%", margin: "2rem auto" }}>
+                <p style={{ fontSize: "1.25rem", textAlign: "center" }}>
+                    Groot feest want wij zijn weer jarig. Allemaal de grote 30.
+                    Allemaal eindelijk volwassen. En dat betekent de grootste
+                    reden voor een nog groter feest! 🎉
+                    <br />
+                    <br />
+                    Op 6 juni vieren wij (Stefan, Jorrit, Paul & Tim) dit
+                    heugelijk feit. Een groot festival met de grootste DJ's, de
+                    grootste kampvuren die je ooit hebt gezien,
+                    theatervoorstellingen en huttub!
+                    <br />
+                    <br />
+                    Kom je ook? Hieronder kun je alvast je eigen ticket scoren!
+                </p>
+            </div>
+        </section>
+        <section
+            style={{ padding: "2rem", backgroundColor: "rgb(190, 191, 192)" }}>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <h2
+                    className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                    style={{
+                        backgroundColor: "rgb(255, 68, 0)",
+                        color: "white",
+                        padding: "0.25em 1em",
+                        margin: "0 0 2rem",
+                        textTransform: "uppercase"
+                    }}>
+                    Plattegrond
+                </h2>
+            </div>
+            <img src={"/img/plattegrond.png"} alt="Plattegrond" />
+        </section>
+        <section style={{ padding: "2rem" }}>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <h2
+                    className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                    style={{
+                        backgroundColor: "rgb(255, 68, 0)",
+                        color: "white",
+                        padding: "0.25em 1em",
+                        margin: "2rem 0",
+                        textTransform: "uppercase"
+                    }}>
+                    Timetable
+                </h2>
+            </div>
+            <p
+                style={{
+                    fontSize: "3rem",
+                    fontWeight: "bold",
+                    textTransform: "uppercase",
+                    textAlign: "center",
+                    margin: "3rem 0"
+                }}>
+                Timetable coming soon
+            </p>
+        </section>
+        <section style={{ padding: "2rem" }}>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <h2
+                    className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                    style={{
+                        backgroundColor: "rgb(255, 68, 0)",
+                        color: "white",
+                        padding: "0.25em 1em",
+                        textTransform: "uppercase"
+                    }}>
+                    Tickets
+                </h2>
+            </div>
             <Form />
         </section>
     </div>
