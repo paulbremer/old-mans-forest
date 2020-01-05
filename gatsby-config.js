@@ -1,8 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: "🌲 Old Man's Forest 🌲",
-        description:
-            "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."
+        description: "Old Man's Forest 🌲. Het grootste feest van 2020!"
     },
     plugins: [
         "gatsby-plugin-react-helmet",
