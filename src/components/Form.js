@@ -191,7 +191,7 @@ export default class Form extends React.Component {
                                 textAlign: "center"
                             }}>
                             <button className="button is-link" type="submit">
-                                Koop een ticket! 🎟
+                                Fix een ticket! 🎟
                             </button>
                         </div>
                     </form>
