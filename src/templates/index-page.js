@@ -92,11 +92,9 @@ export const IndexPageTemplate = ({
               style={{ height: '250px', position: 'absolute', left: '-120px' }}
             />
             <div style={{ minHeight: '250px', padding: '20px' }}>
-              <h2>CORONA UPDATE</h2>
+              <h2 style={{ fontWeight: 800 }}>CORONA UPDATE 2022</h2>
               <p style={{ padding: '20px 40px', fontSize: '16px' }}>
-                Door het corona virus zijn ook wij genoodzaakt dit grote feest te verplaatsen. Er is nog steeds veel
-                onduidelijkheid over grote feesten. Daarom heeft de origanisatie besloten om het feest te verplaatsen
-                naar volgend jaar. Dus pak je agenda en noteer alvast; <strong>11 juni 2022</strong>, dan gaat het nog
+                De overheid laat steeds meer maatregelen los en ook wij kunnen weer een leuk feestje gaan plannen. Dit jaar gaat het dan echt gebeuren! Dus pak je agenda en noteer alvast; <strong>11 juni 2022</strong>, dan gaat het nog
                 groter aangepakt worden!
               </p>
             </div>
