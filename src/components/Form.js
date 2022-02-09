@@ -212,7 +212,7 @@ export default class Form extends React.Component {
                                 <Document>
                                     <Page size="A4" style={styles.page}>
                                         <View style={styles.image}>
-                                            <Image src="https://i.imgur.com/Nl2yyH1.png" />
+                                            <Image src="https://i.imgur.com/hZPrAsL.jpeg" />
                                         </View>
                                         <View style={styles.image}>
                                             <Image
