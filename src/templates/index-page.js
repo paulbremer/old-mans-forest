@@ -96,7 +96,7 @@ export const IndexPageTemplate = ({
               <p style={{ padding: '20px 40px', fontSize: '16px' }}>
                 Door het corona virus zijn ook wij genoodzaakt dit grote feest te verplaatsen. Er is nog steeds veel
                 onduidelijkheid over grote feesten. Daarom heeft de origanisatie besloten om het feest te verplaatsen
-                naar volgend jaar. Dus pak je agenda en noteer alvast; <strong>5 juni 2021</strong>, dan gaat het nog
+                naar volgend jaar. Dus pak je agenda en noteer alvast; <strong>11 juni 2022</strong>, dan gaat het nog
                 groter aangepakt worden!
               </p>
             </div>
@@ -108,7 +108,7 @@ export const IndexPageTemplate = ({
           </div>
           <br />
           <br />
-          Op 6 juni vieren wij (Stefan, Jorrit, Paul & Tim) dit heugelijk feit. Een groot festival met de grootste DJ's,
+          Op 11 juni 2022 vieren wij (Stefan, Jorrit, Paul & Tim) dit heugelijk feit. Een groot festival met de grootste DJ's,
           de grootste kampvuren die je ooit hebt gezien, theatervoorstellingen en huttub!
           <br />
           <br />

@@ -56,20 +56,20 @@ export default class Form extends React.Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        const form = e.target;
 
         if (
             this.state.personCount !== undefined &&
             this.state.sleepingArea !== undefined
         ) {
-            fetch("/", {
+            fetch("https://getform.io/f/ec217c6f-cdce-4361-b1cc-304b7caff35c", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 },
                 body: encode({
-                    "form-name": form.getAttribute("name"),
-                    ...this.state
+                    "name": this.state.name,
+                    "personCount": this.state.personCount,
+                    "sleepingArea": this.state.sleepingArea,
                 })
             })
                 .then(() => this.setState({ ticketApproved: true }))
@@ -89,11 +89,8 @@ export default class Form extends React.Component {
                     <form
                         name="contact"
                         method="post"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
                         onSubmit={this.handleSubmit}
                         style={{ maxWidth: "50%", margin: "2rem auto" }}>
-                        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                         <input type="hidden" name="form-name" value="contact" />
                         <div hidden>
                             <label>
@@ -220,7 +217,7 @@ export default class Form extends React.Component {
                                         <View style={styles.image}>
                                             <Image
                                                 style={{ maxHeight: "10cm" }}
-                                                src="http://static.2018.lowlands.fabriquehq.nl/media/uploads/froala_editor/images/LowlandsFestival_Sfeer_38_BartHeemskerk_SHQ.jpg"
+                                                src="https://www.maxazine.nl/wp-content/uploads/2017/08/Lowlands-sfeer-1.jpg"
                                             />
                                         </View>
                                         <View style={styles.section}>
@@ -247,7 +244,7 @@ export default class Form extends React.Component {
                             fileName="old-mans-forest.pdf">
                             {({ blob, url, loading, error }) =>
                                 loading ? (
-                                    "Loading document..."
+                                    "Je ticket wordt met de hand ingekleurd, een moment geduld..."
                                 ) : (
                                     <button className="button is-link">
                                         Download ticket 🎟
