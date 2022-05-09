@@ -146,17 +146,7 @@ export const IndexPageTemplate = ({
           Timetable
         </h2>
       </div>
-      <p
-        style={{
-          fontSize: '3rem',
-          fontWeight: 'bold',
-          textTransform: 'uppercase',
-          textAlign: 'center',
-          margin: '3rem 0'
-        }}
-      >
-        Timetable coming soon
-      </p>
+      <img src={'/img/timetable-v3.png'} alt="Timetable" style={{ textAlign: 'center', margin: '3rem auto' }} />
     </section>
     <section style={{ padding: '2rem' }}>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
